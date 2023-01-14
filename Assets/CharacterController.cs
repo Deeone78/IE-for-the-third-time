@@ -20,18 +20,21 @@ public class CharacterController : MonoBehaviour
     public float jumpForce = 3000.0f; 
     public float maxSprint = 5.0f;
     float sprintTimer;
-   // Animator myAnim;
-/*
-    int pickupCount = 0;
-    public Text scoreCounter;
-    public GameObject key;
-    bool keyCollected = false;
-    */
+    // Animator myAnim;
+    /*
+        int pickupCount = 0;
+        public Text scoreCounter;
+        public GameObject key;
+        bool keyCollected = false;
+        */
     void Start()
     {
-        
-      //  myAnim = GetComponentInChildren<Animator>();
-      //  cam = GameObject.Find("Main Camera");
+       
+       
+        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Confined;
+        //  myAnim = GetComponentInChildren<Animator>();
+        //  cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
         sprintTimer = maxSprint;
 
@@ -39,7 +42,7 @@ public class CharacterController : MonoBehaviour
 
     // Update is called once per frame
     float rotation = 0.0f;
-    public float normalSpeed = 10f;
+    public float normalSpeed = 1f;
     public float maxSpeed;
     public float sprintSpeed = 20f; 
 
