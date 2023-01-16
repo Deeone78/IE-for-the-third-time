@@ -16,7 +16,7 @@ public class CharacterController : MonoBehaviour
     
     Rigidbody myRigidbody;
     bool isOnGround = false;
-    public GameObject groundChecker;
+  //  public GameObject groundChecker;
     public LayerMask groundLayer;
     public float jumpForce = 3000.0f; 
     public float maxSprint = 5.0f;
@@ -63,7 +63,7 @@ public class CharacterController : MonoBehaviour
             pickupCount = 0;
         }
         */
-        isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
+    //    isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
        // myAnim.SetBool("isOnGround", isOnGround);
         
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
