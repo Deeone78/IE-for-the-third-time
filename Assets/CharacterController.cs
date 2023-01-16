@@ -11,8 +11,9 @@ public class CharacterController : MonoBehaviour
    /* public AudioClip collect;
     public AudioSource sfxPlayer;
     public static event Action OnCollected;    
-    GameObject cam;
     */
+    GameObject cam;
+    
     Rigidbody myRigidbody;
     bool isOnGround = false;
     public GameObject groundChecker;
@@ -34,7 +35,7 @@ public class CharacterController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
        // Cursor.lockState = CursorLockMode.Confined;
         //  myAnim = GetComponentInChildren<Animator>();
-        //  cam = GameObject.Find("Main Camera");
+        cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
         sprintTimer = maxSprint;
 
@@ -46,9 +47,9 @@ public class CharacterController : MonoBehaviour
     public float maxSpeed;
     public float sprintSpeed = 20f; 
 
-   // float camRoatation = 0.0f;
+    float camRoatation = 0.0f;
     float rotaiotionSpeed = 5.0f;
-   // float camRotationSpeed = 5.0f;
+    float camRotationSpeed = 5.0f;
     
 
     void Update()
@@ -94,9 +95,9 @@ public class CharacterController : MonoBehaviour
         transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical")* maxSpeed);
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
-      //  camRoatation = camRoatation + Input.GetAxis("Mouse Y") * camRotationSpeed *-1;
-       // camRoatation = Mathf.Clamp(camRoatation,-40.0f,40.0f);
-      //  cam.transform.localRotation = Quaternion.Euler(new Vector3(camRoatation, 0.0f,0.0f));
+        camRoatation = camRoatation + Input.GetAxis("Mouse Y") * camRotationSpeed *-1;
+        camRoatation = Mathf.Clamp(camRoatation,-40.0f,40.0f);
+        cam.transform.localRotation = Quaternion.Euler(new Vector3(camRoatation, 0.0f,0.0f));
     }
 
    /* void OnTriggerEnter (Collider other)
