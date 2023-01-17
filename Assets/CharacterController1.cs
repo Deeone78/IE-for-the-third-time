@@ -23,7 +23,7 @@ public class CharacterController1 : MonoBehaviour
     public float jumpForce = 200.0f;
 
     public float rotationSpeed = 0.5f;
-    public float camRotationSpeed = 0.05f;
+   // public float camRotationSpeed = 0.05f;
 
     public float maxSprint = 5.0f;
     float sprintTimer;
@@ -34,7 +34,7 @@ public class CharacterController1 : MonoBehaviour
  //   public AudioSource sfxPlayer;
  //   public AudioSource musicPlayer;
 
-    public float bounceForce = 280f;
+  //  public float bounceForce = 280f;
 
     Vector3 respawnPoint = new Vector3(-0.64f,-0.15f,-7.69f);
 
@@ -53,7 +53,7 @@ public class CharacterController1 : MonoBehaviour
 
         sprintTimer = maxSprint;
 
-        cam = GameObject.Find("Main Camera");
+       // cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
     }
 
@@ -102,10 +102,10 @@ public class CharacterController1 : MonoBehaviour
 
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
-        transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
+      //  transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
 
-        camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed * -1;
-        cam.transform.localRotation = Quaternion.Euler(new Vector3(camRotation, 0.0f, 0.0f));
+      //  camRotation = camRotation + Input.GetAxis("Mouse Y") * camRotationSpeed * -1;
+       // cam.transform.localRotation = Quaternion.Euler(new Vector3(camRotation, 0.0f, 0.0f));
     }
 
     void OnTriggerEnter(Collider other)
