@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/*
 public class CharacterController1 : MonoBehaviour
 {
 
@@ -131,7 +131,7 @@ public class CharacterController1 : MonoBehaviour
         {
             collectablesCollected++;
         }
-    */
+    
     }
 
     void OnCollisionEnter(Collision collision)
@@ -152,7 +152,8 @@ public class CharacterController1 : MonoBehaviour
             myRigidbody.AddForce(new Vector3(0f,bounceForce,0f));
             
         }
-        */
+        
     }
 
 }
+*/
