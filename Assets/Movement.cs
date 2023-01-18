@@ -64,7 +64,8 @@ public class Movement : MonoBehaviour
 
     [Header("Refrences")]
     public Transform orientation;
-    //public Animator anim;
+    Animator myAnim;
+    
 
     [Header("GAMESETTINGS")]
     public bool lvlstart;
@@ -95,6 +96,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        myAnim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
@@ -127,6 +129,7 @@ public class Movement : MonoBehaviour
         }
 
         // handle drag
+      /*
         if (grounded)
         {
             rb.drag = groundDrag;
@@ -135,9 +138,9 @@ public class Movement : MonoBehaviour
         {
             rb.drag = 0;
         }
-
+        */
        // anim.SetBool("grounded", grounded);
-        //anim.SetFloat("Speed", moveSpeed);
+        myAnim.SetFloat("Speed", rb.velocity.magnitude);
        // anim.SetBool("slide start", sliding);
 
     }
