@@ -356,6 +356,36 @@ Transform:
   m_Father: {fileID: 1261125639}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &445043391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 445043392}
+  m_Layer: 0
+  m_Name: groundChecker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445043392
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445043391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.01, y: 0.05, z: -0.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &592310149
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +821,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.08233557, y: 0.000000008579049, z: -7.087674e-10, w: 0.9966047}
+  m_LocalRotation: {x: 0.08233557, y: 0.00000000857412, z: -7.083601e-10, w: 0.9966047}
   m_LocalPosition: {x: 1.7610991, y: 1.8296828, z: -11.036265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5891,7 +5921,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113047717}
-  m_LocalRotation: {x: 0.082335554, y: 0.0000000042971195, z: -3.550111e-10, w: 0.9966047}
+  m_LocalRotation: {x: 0.082335554, y: 0.0000000042872683, z: -3.541972e-10, w: 0.9966047}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5965,7 +5995,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251852254}
-  m_LocalRotation: {x: 0.10044964, y: 0.00000004606395, z: -0.0000000046506288, w: 0.9949422}
+  m_LocalRotation: {x: 0.10044964, y: 0.000000036562483, z: -0.0000000036913586, w: 0.9949422}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6103,17 +6133,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9b5626b978572a418403fa18c287c8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   walkSpeed: 5
   sprintSpeed: 6
   slideSpeed: 1
   wallrunSpeed: 0
   speedIncreaseMultiplier: 0
   slopeIncreaseMultiplier: 0
-  groundDrag: 0
+  groundDrag: 10
   sliding: 0
   gravforce: 0
-  jumpForce: 2
+  jumpForce: 10
   jumpCooldown: 10
   airMultiplier: 1
   crouchSpeed: 0
@@ -6126,10 +6156,13 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 0
+  groundChecker: {fileID: 445043391}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   maxSlopeAngle: 0
   boostSpeed: 0
   boosttimer: 0
-  boosting: 0
   wallrunning: 0
   orientation: {fileID: 1035399655}
   lvlstart: 0
@@ -6372,7 +6405,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619288176}
-  m_LocalRotation: {x: 0.06424215, y: 0.000000016616623, z: -0.0000000010696971, w: 0.99793434}
+  m_LocalRotation: {x: 0.06424215, y: -0.000000016656555, z: 0.0000000010722677, w: 0.99793434}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6439,7 +6472,7 @@ GameObject:
   - component: {fileID: 1924064292}
   - component: {fileID: 1924064291}
   - component: {fileID: 1924064290}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
