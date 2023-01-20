@@ -14,7 +14,7 @@ public class dButton : MonoBehaviour
     }
 
     // Update is called once per frame
-    void TaskOnClick()
+    public void TaskOnClick()
     {
 
         SceneManager.LoadScene(1) ;
