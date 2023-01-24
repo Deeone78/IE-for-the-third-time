@@ -5,7 +5,8 @@ using UnityEngine;
 public class sghoot : MonoBehaviour
 
 {
-   public GameObject CMFreeLook;
+    public GameObject camRot;
+    //public GameObject CMFreeLook;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +16,21 @@ public class sghoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+
+
+
+
+          if (Input.GetMouseButton(0))
         {
 
-            CMFreeLook.SetActive(false);
+           // CMFreeLook.SetActive(false);
+            transform.rotation = Quaternion.Euler(new Vector3(0f, camRot.transform.rotation.x, 0f));
         }
 
         else if (Input.GetMouseButtonUp(0))
         {
 
-            CMFreeLook.SetActive(true);
+          //  CMFreeLook.SetActive(true);
 
             //dust.Pause();
             //dust.Clear();
