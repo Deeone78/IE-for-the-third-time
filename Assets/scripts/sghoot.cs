@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class sghoot : MonoBehaviour
-
 {
+    /*
     public GameObject camRot;
+
     //public GameObject CMFreeLook;
     // Start is called before the first frame update
     void Start()
@@ -16,13 +17,8 @@ public class sghoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
-
-          if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
-
            // CMFreeLook.SetActive(false);
             transform.rotation = Quaternion.Euler(new Vector3(0f, camRot.transform.rotation.x, 0f));
         }
@@ -35,5 +31,7 @@ public class sghoot : MonoBehaviour
             //dust.Pause();
             //dust.Clear();
         }
+    
     }
+    */
 }

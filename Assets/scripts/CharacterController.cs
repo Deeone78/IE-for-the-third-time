@@ -8,33 +8,31 @@ using System;
 public class CharacterController : MonoBehaviour
 {
     // Start is called before the first frame update
-   /* public AudioClip collect;
+    public AudioClip collect;
     public AudioSource sfxPlayer;
     public static event Action OnCollected;    
-    */
+    
     GameObject cam;
     
     Rigidbody myRigidbody;
     bool isOnGround = false;
-  //  public GameObject groundChecker;
+    public GameObject groundChecker;
     public LayerMask groundLayer;
     public float jumpForce = 3000.0f; 
     public float maxSprint = 5.0f;
     float sprintTimer;
-    // Animator myAnim;
-    /*
-        int pickupCount = 0;
-        public Text scoreCounter;
-        public GameObject key;
-        bool keyCollected = false;
-        */
+    Animator myAnim;
+
+    int pickupCount = 0;
+    public Text scoreCounter;
+    public GameObject key;
+    bool keyCollected = false;
+
     void Start()
     {
-       
-       
         Cursor.lockState = CursorLockMode.Locked;
-       // Cursor.lockState = CursorLockMode.Confined;
-        //  myAnim = GetComponentInChildren<Animator>();
+
+        myAnim = GetComponentInChildren<Animator>();
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
         sprintTimer = maxSprint;
@@ -44,8 +42,9 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     float rotation = 0.0f;
     public float normalSpeed = 1f;
-    public float maxSpeed;
-    public float sprintSpeed = 20f; 
+    public float sprintSpeed = 20f;
+
+    float maxSpeed;
 
     float camRoatation = 0.0f;
     float rotaiotionSpeed = 5.0f;
@@ -54,23 +53,13 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-/*
-        scoreCounter.text = pickupCount.ToString();
+        isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
+        myAnim.SetBool("isOnGround", isOnGround);
+        Debug.Log(isOnGround);
 
-        if (pickupCount >= 10)
-        {
-            key.SetActive(true);
-            pickupCount = 0;
-        }
-        */
-    //    isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
-       // myAnim.SetBool("isOnGround", isOnGround);
-        
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
-          //  myAnim.SetTrigger("jumped");
             myRigidbody.AddForce(transform.up* jumpForce);
-              
         }
        
         
@@ -88,44 +77,17 @@ public class CharacterController : MonoBehaviour
         }
         sprintTimer = Mathf.Clamp(sprintTimer, 0.0f, maxSprint);
 
-        Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
-     //   myAnim.SetFloat("speed", newVelocity.magnitude);
-        newVelocity += transform.right * Input.GetAxis("Horizontal")* maxSpeed ;
+        Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
+        myAnim.SetFloat("speed", newVelocity.magnitude);
+
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
-        transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical")* maxSpeed);
+
+        Debug.Log(myRigidbody.velocity);
+
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
         camRoatation = camRoatation + Input.GetAxis("Mouse Y") * camRotationSpeed *-1;
         camRoatation = Mathf.Clamp(camRoatation,-40.0f,40.0f);
         cam.transform.localRotation = Quaternion.Euler(new Vector3(camRoatation, 0.0f,0.0f));
     }
-
-   /* void OnTriggerEnter (Collider other)
-    {
-        /*if (other.tag == "Scene Change")
-        {
-            SceneManager.LoadScene(1);
-        }*/
-        /*
-        switch (other.tag)
-        {
-            case "Scene Change":
-                SceneManager.LoadScene(2);
-                break;
-            case "Pickup":
-                pickupCount++;
-                Destroy(other.gameObject);
-                 sfxPlayer.PlayOneShot(collect);
-                break;
-            case "Key":
-                keyCollected = true;
-                Destroy(other.gameObject);
-                break;
-            case "End door" when keyCollected:
-               // Debug.Log("E");
-                SceneManager.LoadScene(3);
-                break;
-        }
-    }
-*/
 }

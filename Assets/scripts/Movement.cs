@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    /*
     [Header("Movement")]
     public float moveSpeed;
     public float walkSpeed;
@@ -120,8 +121,9 @@ public class Movement : MonoBehaviour
         SpeedControl();
         StateHandler();
         gravity();
+
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.05f, groundLayer);
-        myAnim.SetBool("isOnground" , isOnGround);
+        myAnim.SetBool("isOnGround" , isOnGround);
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
             myAnim.SetTrigger("jumped");
@@ -429,7 +431,7 @@ public class Movement : MonoBehaviour
         boosting = true;
         currentMoveSpeed = moveSpeed;
     }
-
+    
     private void Boosting()
     {
         //ends boost when timer ends
@@ -454,6 +456,6 @@ public class Movement : MonoBehaviour
     {
         rb.AddForce(transform.up * -gravforce, ForceMode.Force);
     }
-
+    */
 
 } 

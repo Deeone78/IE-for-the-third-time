@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-/*
+
 public class CharacterController1 : MonoBehaviour
 {
-
+/*
    // Animator myAnim;
 
     public float maxSpeed;
@@ -29,7 +29,7 @@ public class CharacterController1 : MonoBehaviour
     float sprintTimer;
 
     public AudioClip jump;
-  //  public AudioClip backgroundMusic;
+    public AudioClip backgroundMusic;
 
  //   public AudioSource sfxPlayer;
  //   public AudioSource musicPlayer;
@@ -154,6 +154,5 @@ public class CharacterController1 : MonoBehaviour
         }
         
     }
-
-}
 */
+}
