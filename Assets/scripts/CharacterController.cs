@@ -55,7 +55,7 @@ public class CharacterController : MonoBehaviour
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
         myAnim.SetBool("isOnGround", isOnGround);
-        Debug.Log(isOnGround);
+
 
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
@@ -82,7 +82,7 @@ public class CharacterController : MonoBehaviour
 
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
 
-        Debug.Log(myRigidbody.velocity);
+      
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));

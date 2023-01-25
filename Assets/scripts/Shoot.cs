@@ -6,7 +6,8 @@ public class Shoot : MonoBehaviour
 {
     public bool x;
     public ParticleSystem dust;
-
+    public GameObject mainCam;
+    public GameObject aimcam;
     void Start()
     {
 
@@ -17,6 +18,8 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            mainCam.SetActive(false);
+            aimcam.SetActive(true);
 
             dust.Play();
         }
@@ -25,7 +28,8 @@ public class Shoot : MonoBehaviour
         {
 
             dust.Stop();
-
+            mainCam.SetActive(true);
+            aimcam.SetActive(false);
             //dust.Pause();
             //dust.Clear();
         }
