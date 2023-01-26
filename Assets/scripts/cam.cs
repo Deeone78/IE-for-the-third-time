@@ -5,34 +5,39 @@ using UnityEngine;
 
 public class cam : MonoBehaviour
 {
-    [Header("references")]
-    public Transform orient;
-    public Transform Player;
-    public Transform Player_obj;
-    public Rigidbody rbody;
-
-    public float rotationspeed;
-
-    private void Start()
+    public GameObject player;
+    public GameObject movePosition;
+    public GameObject shootPosition;
+    public float moveSpeed = 3f;
+    public float rotationSpeed = 3f;
+    public GameObject target;
+    void Start() 
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+       
     }
 
-    private void Update()
+    void Update()
     {
-        //rotate orientation
-        Vector3 veiwDir = Player.position - new Vector3(transform.position.x, Player.position.y, transform.position.z);
-        orient.forward = veiwDir.normalized;
-
-        //rotate player
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
-        Vector3 inputDir = orient.forward * verticalInput + orient.right * horizontalInput;
-
-        if(inputDir!= Vector3.zero)
+        if (Input.GetMouseButton(0))
         {
-            Player_obj.forward = Vector3.Slerp(Player_obj.forward, inputDir.normalized, Time.deltaTime * rotationspeed);
+            Vector3 targetDirection = target.transform.position - transform.position;
+            Quaternion newRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * rotationSpeed);
+            transform.position = Vector3.Lerp(transform.position, shootPosition.transform.position, Time.deltaTime * moveSpeed);
+
+        } else
+        {
+            Vector3 targetDirection = player.transform.position - transform.position;
+            Quaternion newRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * rotationSpeed);
+            transform.position = Vector3.Lerp(transform.position, movePosition.transform.position, Time.deltaTime * moveSpeed);
         }
+
+      //  else if (Input.GetMouseButtonUp(0))
+      //  {
+        //    transform.position = Vector3.Lerp(transform.position, movePosition.transform.position, Time.deltaTime * 3);
+
+    //    }
+
     }
 }
