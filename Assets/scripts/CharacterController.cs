@@ -30,7 +30,7 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Locked;
 
         myAnim = GetComponentInChildren<Animator>();
         cam = GameObject.Find("Main Camera");

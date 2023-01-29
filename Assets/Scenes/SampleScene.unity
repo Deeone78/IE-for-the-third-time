@@ -814,6 +814,7 @@ GameObject:
   - component: {fileID: 742214750}
   - component: {fileID: 742214749}
   - component: {fileID: 742214748}
+  - component: {fileID: 742214751}
   m_Layer: 5
   m_Name: ConvoStart
   m_TagString: Untagged
@@ -884,7 +885,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 742214749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 742214751}
+        m_TargetAssemblyTypeName: NPC, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &742214749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,6 +936,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742214746}
   m_CullTransparentMesh: 1
+--- !u!114 &742214751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742214746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730a50e1155ce6241a37847c9ded5146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Npc:
+    name: Deeyi
+    sentences:
+    - grgrgregr
+    - rdgdrgdr
+    - gdrsgrdsgsrgsr
 --- !u!1 &939482121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6192880998597536411, guid: 03a3484700bb4514099167726ac9f8e9, type: 3}
@@ -6868,6 +6899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593661992}
+  - component: {fileID: 1593661993}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -6889,6 +6921,18 @@ Transform:
   m_Father: {fileID: 1362596507}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593661993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593661991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc573676d7999e4da2ec15fbbcfeccc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1595632355
 GameObject:
   m_ObjectHideFlags: 0
@@ -7500,7 +7544,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2081673797}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1593661993}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2081673797
 MonoBehaviour:
   m_ObjectHideFlags: 0
