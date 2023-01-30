@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
     // Start is called before the first frame update
     private Queue<string> sentences;
 
-    //public Animator 
+    public Animator textBox1;
     public Text nameText;
     public Text dialogueText;
 
@@ -16,13 +17,13 @@ public class DialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
 
-       // myAnim = GetComponentInChildren<Animator>();
+     // textBox1 = GetComponentInChildren<Animator>();
 
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        Animator.SetBool("Isopen", true);
-      //  Debug.Log("starting a convertion with" + dialogue.name);
+        textBox1.SetBool("Isopen", true);
+        Debug.Log("starting a convertion with" + dialogue.name);
 
         nameText.text = dialogue.name;
         
@@ -40,18 +41,32 @@ public class DialogueManager : MonoBehaviour
     {
         if(sentences.Count == 0)
         {
-                EndDialogue();
-                return;
+            EndDialogue();
+            return;
 
 
         }
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+      //  dialogueText.text = sentence;
+        IEnumerator TypeSentence (string sentence)
+        {
+            dialogueText.text  ="";
+            foreach(char letter in sentence.ToCharArray())
+            {
+                dialogueText.text+= letter;
+                yield return null;
+
+            }
         
+        
+        
+        }
         void EndDialogue()
         {
             // Debug.Log("End of conversati");
-            Animator.SetBool("Isopen", false);
+            textBox1.SetBool("Isopen", false);
         }
           
     }
