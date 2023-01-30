@@ -951,9 +951,9 @@ MonoBehaviour:
   Npc:
     name: Deeyi
     sentences:
-    - grgrgregr
-    - rdgdrgdr
-    - gdrsgrdsgsrgsr
+    - Sentence NO 1
+    - Sentence No2
+    - Sentence No3
 --- !u!1 &939482121 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6192880998597536411, guid: 03a3484700bb4514099167726ac9f8e9, type: 3}
@@ -6453,6 +6453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362596507}
   - component: {fileID: 1362596508}
+  - component: {fileID: 1362596509}
   m_Layer: 0
   m_Name: TextBox
   m_TagString: Untagged
@@ -6468,7 +6469,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362596506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -209, y: -236, z: -104.77557}
+  m_LocalPosition: {x: -209, y: -307, z: -104.7756}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1757441732}
@@ -6494,6 +6495,25 @@ MonoBehaviour:
   Npc:
     name: 
     sentences: []
+--- !u!95 &1362596509
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362596506}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c0ef167b1fb7c8547a18c4063f549d4a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1387826218
 GameObject:
   m_ObjectHideFlags: 3
@@ -6900,6 +6920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1593661992}
   - component: {fileID: 1593661993}
+  - component: {fileID: 1593661994}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -6933,6 +6954,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc573676d7999e4da2ec15fbbcfeccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 2145336807}
+  dialogueText: {fileID: 29502839}
+--- !u!95 &1593661994
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593661991}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c0ef167b1fb7c8547a18c4063f549d4a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1595632355
 GameObject:
   m_ObjectHideFlags: 0

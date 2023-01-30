@@ -7,22 +7,27 @@ public class DialogueManager : MonoBehaviour
 {
     // Start is called before the first frame update
     private Queue<string> sentences;
-    
 
-
+    //public Animator 
+    public Text nameText;
+    public Text dialogueText;
 
     void Start()
     {
         sentences = new Queue<string>();
-    
-    
-    
+
+       // myAnim = GetComponentInChildren<Animator>();
+
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        Animator.SetBool("Isopen", true);
+      //  Debug.Log("starting a convertion with" + dialogue.name);
 
-        Debug.Log("starting a convertion with" + dialogue.name);
+        nameText.text = dialogue.name;
+        
         sentences.Clear();
+
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -41,12 +46,12 @@ public class DialogueManager : MonoBehaviour
 
         }
         string sentence = sentences.Dequeue();
-        Debug.Log(sentence);
+        dialogueText.text = sentence;
         
         void EndDialogue()
         {
-            Debug.Log("End of conversati");
-
+            // Debug.Log("End of conversati");
+            Animator.SetBool("Isopen", false);
         }
           
     }
