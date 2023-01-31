@@ -15,10 +15,12 @@ public class CharacterController : MonoBehaviour
     GameObject cam;
     
     Rigidbody myRigidbody;
+    bool npcDistance = false;
     bool isOnGround = false;
     public GameObject groundChecker;
     public LayerMask groundLayer;
-    public float jumpForce = 3000.0f; 
+    public float jumpForce = 3000.0f;
+    public LayerMask player;
     public float maxSprint = 5.0f;
     float sprintTimer;
     Animator myAnim;
@@ -49,14 +51,27 @@ public class CharacterController : MonoBehaviour
     float camRoatation = 0.0f;
     float rotaiotionSpeed = 5.0f;
     float camRotationSpeed = 5.0f;
-    
+    public GameObject convoStart;
+
 
     void Update()
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
         myAnim.SetBool("isOnGround", isOnGround);
+        npcDistance = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player);
+
+        if (npcDistance == true)
+        {
+            convoStart.SetActive(true);
 
 
+        }
+        else
+        {
+            convoStart.SetActive(false);
+        }
+        
+        
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
             myRigidbody.AddForce(transform.up* jumpForce);

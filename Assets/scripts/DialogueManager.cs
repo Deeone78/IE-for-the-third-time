@@ -52,10 +52,10 @@ public class DialogueManager : MonoBehaviour
       //  dialogueText.text = sentence;
         IEnumerator TypeSentence (string sentence)
         {
-            dialogueText.text  ="";
+            dialogueText.text = "";
             foreach(char letter in sentence.ToCharArray())
             {
-                dialogueText.text+= letter;
+                dialogueText.text += letter;
                 yield return null;
 
             }
