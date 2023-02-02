@@ -13,12 +13,13 @@ public class CharacterController : MonoBehaviour
     public static event Action OnCollected;    
     
     GameObject cam;
-    
+    bool npcDistance = false;
     Rigidbody myRigidbody;
     bool isOnGround = false;
     public GameObject groundChecker;
     public LayerMask groundLayer;
     public float jumpForce = 3000.0f; 
+    public LayerMask player;
     public float maxSprint = 5.0f;
     float sprintTimer;
     Animator myAnim;
@@ -30,7 +31,7 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-       // Cursor.lockState = CursorLockMode.Locked;
+      //  Cursor.lockState = CursorLockMode.Locked;
 
         myAnim = GetComponentInChildren<Animator>();
         cam = GameObject.Find("Main Camera");
@@ -49,13 +50,32 @@ public class CharacterController : MonoBehaviour
     float camRoatation = 0.0f;
     float rotaiotionSpeed = 5.0f;
     float camRotationSpeed = 5.0f;
-    
+    public GameObject convoStart;
 
     void Update()
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
         myAnim.SetBool("isOnGround", isOnGround);
+        npcDistance = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player);
+        
+        if (npcDistance == true)
+        {
+            convoStart.SetActive(true);
 
+
+        }
+        else
+        {
+            convoStart.SetActive(false);
+        }
+        
+        
+        
+        if (Input.GetKey(KeyCode.S))
+        {
+
+            
+        }
 
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
@@ -83,8 +103,7 @@ public class CharacterController : MonoBehaviour
 
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
 
-     
-
+      
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
