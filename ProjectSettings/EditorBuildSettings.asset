@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/poem.unity
     guid: 2e75d67c12933b845921613177ff6014
   - enabled: 1
+    path: Assets/Scenes/poem 1.unity
+    guid: 85e9c1d0bbc64ce41bb7e3c6d6db9335
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

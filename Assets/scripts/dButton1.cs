@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class dButton : MonoBehaviour
+public class dButton1 : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Button StartButton;
+    public Button StartButton1;
     
     void Start()
     {
-        Button btn = StartButton.GetComponent<Button>();
+        Button btn1 = StartButton1.GetComponent<Button>();
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class dButton : MonoBehaviour
     public void TaskOnClick()
     {
 
-        SceneManager.LoadScene(+1) ;
+        SceneManager.LoadScene(2) ;
 
     }
     
