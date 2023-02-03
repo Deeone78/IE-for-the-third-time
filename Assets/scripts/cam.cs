@@ -18,7 +18,7 @@ public class cam : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             Vector3 targetDirection = target.transform.position - transform.position;
             Quaternion newRotation = Quaternion.LookRotation(targetDirection, Vector3.up);

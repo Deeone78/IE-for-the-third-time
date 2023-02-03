@@ -11,6 +11,6 @@ public class DissolveSphere : MonoBehaviour {
     }
 
     private void Update() {
-        mat.SetFloat("_DissolveAmount", Mathf.Sin(Time.time) / 2 + 0.5f);
+        mat.SetFloat("_DissolveAmount", Time.time*0.2f);
     }
 }

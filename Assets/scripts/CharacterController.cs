@@ -57,7 +57,7 @@ public class CharacterController : MonoBehaviour
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
         myAnim.SetBool("isOnGround", isOnGround);
         npcDistance = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player);
-        
+
         if (npcDistance == true)
         {
             convoStart.SetActive(true);
@@ -68,30 +68,30 @@ public class CharacterController : MonoBehaviour
         {
             convoStart.SetActive(false);
         }
-        
-        
-        
+
+
+
         if (Input.GetKey(KeyCode.S))
         {
 
-            
+
         }
 
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
-            myRigidbody.AddForce(transform.up* jumpForce);
+            myRigidbody.AddForce(transform.up * jumpForce);
             myAnim.SetTrigger("jumped");
         }
-       
-        
-        if (Input.GetKey(KeyCode.LeftShift)&& sprintTimer > 0.0f)
+
+
+        if (Input.GetKey(KeyCode.LeftShift) && sprintTimer > 0.0f)
         {
             maxSpeed = sprintSpeed;
             sprintTimer = sprintTimer - Time.deltaTime;
-        }else
-        {   
+        } else
+        {
             maxSpeed = normalSpeed;
-            if (Input.GetKey(KeyCode.LeftShift)==false){
+            if (Input.GetKey(KeyCode.LeftShift) == false) {
                 sprintTimer = sprintTimer + Time.deltaTime;
             }
 
@@ -102,11 +102,21 @@ public class CharacterController : MonoBehaviour
         myAnim.SetFloat("speed", newVelocity.magnitude);
 
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
+        /*if (Input.GetKey(KeyCode.S))
+        {
+            rotation += 180;
+
+        }
+
+        */
+        rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
+        transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
+
+        
 
       
 
-        rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
-        transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
+        
         //camRoatation = camRoatation + Input.GetAxis("Mouse Y") * camRotationSpeed *-1;
         //camRoatation = Mathf.Clamp(camRoatation,-40.0f,40.0f);
         //cam.transform.localRotation = Quaternion.Euler(new Vector3(camRoatation, 0.0f,0.0f));
