@@ -17,7 +17,7 @@ public class DissolveSphere : MonoBehaviour
 
     private void Update()
     {
-
+        /*
         Vector3 direction = Vector3.forward;
         Ray theRay = new Ray(transform.position, transform.TransformDirection(direction * range));
         if (hit.collider.tag == ("NPC"))
@@ -27,5 +27,7 @@ public class DissolveSphere : MonoBehaviour
             Debug.Log("you hit something");
 
         }
+        */
     }
+
 }

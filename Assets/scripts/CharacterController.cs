@@ -14,12 +14,21 @@ public class CharacterController : MonoBehaviour
     
     GameObject cam;
     bool npcDistance = false;
+    bool npcDistance1 = false;
+    bool npcDistance2 = false;
+    bool npcDistance3 = false;
+    bool npcDistance4 = false;
+
     Rigidbody myRigidbody;
     bool isOnGround = false;
     public GameObject groundChecker;
     public LayerMask groundLayer;
     public float jumpForce = 3000.0f; 
     public LayerMask player;
+    public LayerMask player1;
+    public LayerMask player2;
+    public LayerMask player3;
+    public LayerMask player4;
     public float maxSprint = 5.0f;
     float sprintTimer;
     Animator myAnim;
@@ -51,13 +60,22 @@ public class CharacterController : MonoBehaviour
     float rotaiotionSpeed = 5.0f;
     float camRotationSpeed = 5.0f;
     public GameObject convoStart;
+    public GameObject convoStart1;
+    public GameObject convoStart2;
+    public GameObject convoStart3;
+    public GameObject convoStart4;
+    
 
     void Update()
     {
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
         myAnim.SetBool("isOnGround", isOnGround);
         npcDistance = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player);
-
+        npcDistance1 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player1);
+        npcDistance2 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player2);
+        npcDistance3 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player3);
+        npcDistance4 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player4);
+        
         if (npcDistance == true)
         {
             convoStart.SetActive(true);
@@ -68,9 +86,47 @@ public class CharacterController : MonoBehaviour
         {
             convoStart.SetActive(false);
         }
+        if (npcDistance1 == true)
+        {
+            convoStart1.SetActive(true);
 
+
+        }
+        else
+        {
+            convoStart1.SetActive(false);
+        }
+        if (npcDistance2 == true)
+        {
+            convoStart2.SetActive(true);
+
+
+        }
+        else
+        {
+            convoStart2.SetActive(false);
+        }
         
+        if (npcDistance3 == true)
+        {
+            convoStart3.SetActive(true);
 
+
+        }
+        else
+        {
+            convoStart3.SetActive(false);
+        }
+        if (npcDistance4 == true)
+        {
+            convoStart4.SetActive(true);
+
+
+        }
+        else
+        {
+            convoStart4.SetActive(false);
+        }
 
         if (npcDistance != null)
         {
