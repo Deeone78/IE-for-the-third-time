@@ -69,7 +69,16 @@ public class CharacterController : MonoBehaviour
             convoStart.SetActive(false);
         }
 
+        
 
+
+        if (npcDistance != null)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+             //   npcDistance.gameObject.GetComponent<NPC>().TriggerDialogue();
+            }
+        }
 
         if (Input.GetKey(KeyCode.S))
         {

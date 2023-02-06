@@ -20,6 +20,17 @@ public class DialogueManager : MonoBehaviour
      // textBox1 = GetComponentInChildren<Animator>();
 
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            DisplayNextSentence();
+        }
+    }
+
+
+
     public void StartDialogue(Dialogue dialogue)
     {
         textBox1.SetBool("Isopen", true);

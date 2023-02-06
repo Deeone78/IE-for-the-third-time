@@ -7,7 +7,7 @@ public class NPC : MonoBehaviour
     // Start is called before the first frame update
     public Dialogue Npc;
     // Canvas.GetComponent<Dialogue>().Dialogue; 
-
+    bool dialogTriggered = false;
     public void TriggerDialogue()
     {
 
