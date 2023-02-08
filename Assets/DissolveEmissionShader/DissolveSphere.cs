@@ -16,8 +16,8 @@ public class DissolveSphere : MonoBehaviour {
         collisionEvents = new List<ParticleCollisionEvent>();
 
 
-        GameObject copy = Instantiate(gameObject, transform.position, transform.rotation);
-        copy.GetComponent<DissolveSphere>().enabled = false;
+        //GameObject copy = Instantiate(gameObject, transform.position, transform.rotation);
+        //opy.GetComponent<DissolveSphere>().enabled = false;
 
         // mat.SetFloat("_DissolveAmount", Mathf.Sin(Time.time) / 2 + 0.5f);
     }
