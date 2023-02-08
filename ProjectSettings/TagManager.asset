@@ -6,6 +6,7 @@ TagManager:
   tags:
   - particle
   - NPC
+  - DisBuild
   layers:
   - Default
   - TransparentFX

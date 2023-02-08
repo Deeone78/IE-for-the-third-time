@@ -5,13 +5,31 @@ using UnityEngine;
 public class DissolveSphere : MonoBehaviour {
 
     Material mat;
+    public ParticleSystem paint;
+    public List<ParticleCollisionEvent> collisionEvents;
+
+    float paintedAmount = 0f;
 
     private void Start() {
         mat = GetComponent<Renderer>().material;
-      //  mat.SetFloat("_DissolveAmount", Mathf.Sin(Time.time) / 2 + 0.5f);
+        paint = FindObjectOfType<ParticleSystem>();
+        collisionEvents = new List<ParticleCollisionEvent>();
+
+
+        GameObject copy = Instantiate(gameObject, transform.position, transform.rotation);
+        copy.GetComponent<DissolveSphere>().enabled = false;
+
+        // mat.SetFloat("_DissolveAmount", Mathf.Sin(Time.time) / 2 + 0.5f);
+    }
+    private void OnParticleCollision(GameObject other)
+    {
+        if (paintedAmount < 1.0f)
+        {
+            paintedAmount = paintedAmount + Time.deltaTime;
+        }
     }
 
     private void Update() {
-        mat.SetFloat("_DissolveAmount", Mathf.Sin(Time.time) / 2 + 0.5f);
+        mat.SetFloat("_DissolveAmount", paintedAmount);
     }
 }
