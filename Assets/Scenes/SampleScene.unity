@@ -19878,7 +19878,6 @@ GameObject:
   - component: {fileID: 1171267314}
   - component: {fileID: 1171267317}
   - component: {fileID: 1171267316}
-  - component: {fileID: 1171267315}
   m_Layer: 0
   m_Name: pCube190
   m_TagString: Untagged
@@ -19900,20 +19899,6 @@ Transform:
   m_Father: {fileID: 480313810}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1171267315
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171267313}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6370066385871862097, guid: abe4debfa07a1d448abb88055882ab37, type: 3}
 --- !u!23 &1171267316
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30051,7 +30036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &1939447825
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -44701,8 +44686,8 @@ GameObject:
   - component: {fileID: 4192479194460810666}
   - component: {fileID: 281421473369762851}
   - component: {fileID: 953716857515764209}
-  - component: {fileID: 3927107894892967930}
   - component: {fileID: 3927107894892967931}
+  - component: {fileID: 3927107894892967930}
   m_Layer: 0
   m_Name: pCube189
   m_TagString: Untagged
