@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DissolveSphere : MonoBehaviour {
-
+    float paintSpeed = 4f; 
     Material mat;
     public ParticleSystem paint;
     public List<ParticleCollisionEvent> collisionEvents;
@@ -25,7 +25,7 @@ public class DissolveSphere : MonoBehaviour {
     {
         if (paintedAmount < 1.0f)
         {
-            paintedAmount = paintedAmount + Time.deltaTime;
+            paintedAmount = paintedAmount + Time.deltaTime*paintSpeed;
         }
     }
 

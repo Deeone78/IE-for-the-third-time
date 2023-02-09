@@ -37,11 +37,13 @@ public class CharacterController : MonoBehaviour
     public Text scoreCounter;
     public GameObject key;
     bool keyCollected = false;
+    public Transform target;
 
     void Start()
     {
-      //  Cursor.lockState = CursorLockMode.Locked;
 
+      //  Cursor.lockState = CursorLockMode.Locked;
+        
         myAnim = GetComponentInChildren<Animator>();
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
@@ -174,14 +176,20 @@ public class CharacterController : MonoBehaviour
         }
 
         */
+
+
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
+        
+        Debug.Log(Input.GetAxis("Mouse Y"));
+
+        target.position= new Vector3(target.position.x, target.position.y + Input.GetAxis("Mouse Y"), target.position.z);
 
         
 
-      
 
-        
+
+
         //camRoatation = camRoatation + Input.GetAxis("Mouse Y") * camRotationSpeed *-1;
         //camRoatation = Mathf.Clamp(camRoatation,-40.0f,40.0f);
         //cam.transform.localRotation = Quaternion.Euler(new Vector3(camRoatation, 0.0f,0.0f));

@@ -25,7 +25,8 @@ public class cam : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * rotationSpeed);
             transform.position = Vector3.Lerp(transform.position, shootPosition.transform.position, Time.deltaTime * moveSpeed);
 
-        } else
+        } 
+        else
         {
             Vector3 targetDirection = player.transform.position - transform.position;
             Quaternion newRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
