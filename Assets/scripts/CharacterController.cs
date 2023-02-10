@@ -38,12 +38,13 @@ public class CharacterController : MonoBehaviour
     public GameObject key;
     bool keyCollected = false;
     public Transform target;
+    public DissolveSphere[] paintedObjects;
 
     void Start()
     {
 
-      //  Cursor.lockState = CursorLockMode.Locked;
-        
+        //  Cursor.lockState = CursorLockMode.Locked;
+        paintedObjects = FindObjectsOfType<DissolveSphere>();
         myAnim = GetComponentInChildren<Animator>();
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
@@ -77,6 +78,8 @@ public class CharacterController : MonoBehaviour
         npcDistance2 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player2);
         npcDistance3 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player3);
         npcDistance4 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player4);
+
+        Debug.Log(CompleteCheck());
         
         if (npcDistance == true)
         {
@@ -193,5 +196,18 @@ public class CharacterController : MonoBehaviour
         //camRoatation = camRoatation + Input.GetAxis("Mouse Y") * camRotationSpeed *-1;
         //camRoatation = Mathf.Clamp(camRoatation,-40.0f,40.0f);
         //cam.transform.localRotation = Quaternion.Euler(new Vector3(camRoatation, 0.0f,0.0f));
+    }
+
+    bool CompleteCheck()
+    {
+        for(int i = 0; i < paintedObjects.Length; i++)
+        {
+            if(paintedObjects[i].painted == false)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

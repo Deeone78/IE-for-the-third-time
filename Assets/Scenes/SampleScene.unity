@@ -7379,6 +7379,7 @@ MonoBehaviour:
       the aliens born proud\u201D."
     - "Well bye Shadow, I\u2019m sure I won\u2019t be seeing you again, you lot have
       a tendency to \u201Cdisappear\u201D."
+    - ...
 --- !u!65 &545620207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21581,7 +21582,22 @@ MonoBehaviour:
   Npc:
     name: Kid
     sentences:
-    - 
+    - 'Kid: Hello, are you a Shadow?'
+    - You:...
+    - "Kid: My mummy said not to let Shadows speak to me\u2026 but you aren\u2019t
+      speaking so I guess it's ok.\r"
+    - 'My mummy also said that Shadows are ******* ******* **** *****.
+
+'
+    - "You:!!!\r"
+    - "Kid: Why is your head so funny? It kind of looks like a mask. You Shadies
+      are so weird.\r"
+    - "My daddy started drinking because the factory replaced most of the workers
+      with Shadies so they could spend less money.\r"
+    - "My daddy says you stole our jobs\u2026"
+    - You:..
+    - "Kid: Go away Shadie\u2026 I hate you.\r"
+    - ...
 --- !u!65 &1302840273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22010,7 +22026,21 @@ MonoBehaviour:
   Npc:
     name: people
     sentences:
-    - Message 4
+    - "Worker: Hello there, let me guess\u2026 you\u2019ve been sentenced to life
+      at the factory, just like all the other Shadows up here.\r"
+    - "It\u2019s really not that bad, just make sure that you meet your daily quota.
+      What we do here at this factory is very very important\u2026This society couldn\u2019t
+      run without it.\r\n"
+    - "without devout workers such as you and I.\r"
+    - You:...
+    - "Worker: Just be careful\u2026Whatever you do, don\u2019t do anything you\u2019re
+      going to regret\u2026The punishments here can get very severe\u2026You might
+      not even recognise yourself anymore.\r"
+    - " I would tell you to be careful of what you say but you clearly aren\u2019t
+      the talkative type. The price of sustenance pills keeps going up"
+    - "but our wages have stayed fixed for years. Don\u2019t get cau-\r I mean don\u2019t
+      steal them\u2026you will lose a week's wages if you do.\n"
+    - ...
 --- !u!65 &1332070150
 BoxCollider:
   m_ObjectHideFlags: 0

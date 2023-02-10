@@ -7,7 +7,7 @@ public class DissolveSphere : MonoBehaviour {
     Material mat;
     public ParticleSystem paint;
     public List<ParticleCollisionEvent> collisionEvents;
-
+    public bool painted = false; 
     float paintedAmount = 0f;
 
     private void Start() {
@@ -26,6 +26,13 @@ public class DissolveSphere : MonoBehaviour {
         if (paintedAmount < 1.0f)
         {
             paintedAmount = paintedAmount + Time.deltaTime*paintSpeed;
+       
+            
+        
+        }
+        else
+        {
+            painted = true;
         }
     }
 
