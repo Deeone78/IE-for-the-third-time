@@ -871,8 +871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162.56842, y: -140.5}
-  m_SizeDelta: {x: 407.6563, y: 45.7845}
+  m_AnchoredPosition: {x: 171.5, y: -149.2465}
+  m_SizeDelta: {x: 407.6563, y: 61.4607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &29502839
 MonoBehaviour:
@@ -896,10 +896,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e9d79bde54035a542900751cdb0af24f, type: 3}
-    m_FontSize: 19
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 278
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -6426,7 +6426,7 @@ Transform:
   m_LocalScale: {x: 3.6244266, y: 3.624427, z: 3.6244266}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &491154885
 GameObject:
@@ -7344,7 +7344,7 @@ GameObject:
   - component: {fileID: 545620207}
   - component: {fileID: 545620206}
   m_Layer: 7
-  m_Name: Npc (2)
+  m_Name: Business Man
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7363,9 +7363,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Npc:
-    name: people
+    name: Business man
     sentences:
-    - Message 2
+    - "Business man: **** I\u2019m going to be late. "
+    - You:..
+    - "Business man: What are you looking at?...No, I do NOT have any spare change.\r"
+    - "Look Shadow, say something or leave. Or perhaps\u2026 Are you too starstruck
+      to speak to me?"
+    - "You:...?\r"
+    - "Business man: AH. Yes, that must be the case, you recognise me from all of
+      the poster campaigns around Shadow City and up here. Well I certainly am flattered...But
+      I won\u2019t be giving YOU "
+    - "a signature, don\u2019t take it personally, It\u2019s not your fault you're
+      a Shadow, you know what they say \u201CThe shadow does not have wings, unlike
+      the aliens born proud\u201D."
+    - "Well bye Shadow, I\u2019m sure I won\u2019t be seeing you again, you lot have
+      a tendency to \u201Cdisappear\u201D."
 --- !u!65 &545620207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8224,7 +8237,7 @@ GameObject:
   - component: {fileID: 651709156}
   - component: {fileID: 651709160}
   m_Layer: 3
-  m_Name: Npc
+  m_Name: 'Police 1 '
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8300,7 +8313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651709155}
   m_LocalRotation: {x: 0.70502234, y: -0, z: -0.70918506, w: 0}
-  m_LocalPosition: {x: -1.9844284, y: -0.70000076, z: 78.14602}
+  m_LocalPosition: {x: 11.58, y: -0.70000076, z: 5.06}
   m_LocalScale: {x: 2.4102, y: 6.175415, z: 2.4102}
   m_Children:
   - {fileID: 815705945}
@@ -8320,9 +8333,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Npc:
-    name: solder
+    name: Police Man
     sentences:
-    - Messsage 1
+    - " Police officer: Welcome to THE HUB Shadow\u2026You are technically a prisoner
+      here but since your crimes were simply of a disruptive nature you only got
+      a Life sentence in the factory.\r\n"
+    - 'You: !'
+    - "Police Officer: I\u2019m sure you\u2019re thrilled\u2026Lucky for you I\u2019m
+      not in charge. Or your punishment would be\u2026\r"
+    - " Much more Severe\u2026"
+    - "Anyway, Ground rules are\u2026Don\u2019t cause anymore mischief! We are ALWAYS
+      watching."
+    - "I'm sure you are aware of that. NEVER be late to the factory, It starts at
+      9am and ends at 5pm everyday\u2026\r"
+    - " Also NO controversial speech or even thoughts\u2026Although I\u2019m sure
+      that won\u2019t be a problem for you\u2026\r\n"
+    - 'You:..
+
+'
+    - 'Police Officer: You have one day before your shifts at the factory start'
+    - 'You will be paid enough to afford some sustenance pills and live in a shared
+      accommodation with other Shadows.
+
+'
+    - "Listen kid\u2026You can do this the easy way or the hard way, co-operate 
+      now or be forced into submission\u2026 We have our ways\u2026.\r\n"
+    - "Anyway, I hope I won\u2019t be having to speak to you again anytime soon."
+    - For your sake.
+    - ...
 --- !u!1 &652473373
 GameObject:
   m_ObjectHideFlags: 0
@@ -10191,7 +10229,7 @@ GameObject:
   - component: {fileID: 802679271}
   - component: {fileID: 802679275}
   m_Layer: 6
-  m_Name: Npc (1)
+  m_Name: Soldier
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10287,9 +10325,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Npc:
-    name: people
+    name: Soldier
     sentences:
-    - Message 2
+    - 'Soldier: What do you want?'
+    - You:...
+    - "Soldier: You got some nerve getting so close to me...Not everyone is going
+      to be as tolerant as I am, you know.\r"
+    - "You Shadows are always up to no good\u2026If you\u2019re getting any Ideas
+      about our bank and Business centres over here. Just know that they are fortified
+      to the highest degree.\r\n"
+    - "There may not be the death penalty in Shadow City\u2026YET\u2026but it is
+      here."
+    - You:..
+    - "Soldier: I hate you quiet types. You look like you\u2019ve got something to
+      say but you never do. "
+    - "Get out of here\u2026 and remember we\u2019re always watching."
+    - ...
 --- !u!1 &815705944
 GameObject:
   m_ObjectHideFlags: 0
@@ -21509,7 +21560,7 @@ GameObject:
   - component: {fileID: 1302840273}
   - component: {fileID: 1302840272}
   m_Layer: 8
-  m_Name: Npc (3)
+  m_Name: Kid
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21528,9 +21579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Npc:
-    name: people
+    name: Kid
     sentences:
-    - Message 3
+    - 
 --- !u!65 &1302840273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22035,7 +22086,7 @@ Transform:
   m_Children:
   - {fileID: 1402331462}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 180, y: 90.337, z: 0}
 --- !u!1 &1334341892
 GameObject:
@@ -22326,7 +22377,6 @@ Transform:
   - {fileID: 29502838}
   - {fileID: 2145336806}
   - {fileID: 2081673795}
-  - {fileID: 1593661992}
   m_Father: {fileID: 2081125574}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25340,11 +25390,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593661991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 336.88208, y: 20.816208, z: 0}
+  m_LocalPosition: {x: -53.11792, y: 190.91621, z: -105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1362596507}
-  m_RootOrder: 4
+  m_Father: {fileID: 2081673795}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1593661993
 MonoBehaviour:
@@ -32520,6 +32570,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1512765492}
+  - {fileID: 1593661992}
   m_Father: {fileID: 1362596507}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
