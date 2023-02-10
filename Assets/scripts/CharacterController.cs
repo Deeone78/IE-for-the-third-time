@@ -51,7 +51,7 @@ public class CharacterController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+                                           // Update is called once per frame
     float rotation = 0.0f;
     public float normalSpeed = 1f;
     public float sprintSpeed = 20f;
@@ -181,11 +181,11 @@ public class CharacterController : MonoBehaviour
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
         
-        Debug.Log(Input.GetAxis("Mouse Y"));
+        //Debug.Log(Input.GetAxis("Mouse Y"));
 
         target.position= new Vector3(target.position.x, target.position.y + Input.GetAxis("Mouse Y"), target.position.z);
 
-        
+        Mathf.Clamp(rotation, -10, 10);
 
 
 
