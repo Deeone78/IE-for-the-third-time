@@ -71,7 +71,7 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
+        isOnGround = Physics.CheckSphere(groundChecker.transform.position, 1f, groundLayer);
         myAnim.SetBool("isOnGround", isOnGround);
         npcDistance = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player);
         npcDistance1 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player1);

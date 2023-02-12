@@ -2364,6 +2364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &170055815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,6 +4529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &361980510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,6 +5080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &397546839
 GameObject:
   m_ObjectHideFlags: 0
@@ -5513,6 +5516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &427669362
 GameObject:
   m_ObjectHideFlags: 0
@@ -10668,6 +10672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &836703850
 GameObject:
   m_ObjectHideFlags: 0
@@ -19420,6 +19425,7 @@ GameObject:
   - component: {fileID: 1140320473}
   - component: {fileID: 1140320476}
   - component: {fileID: 1140320475}
+  - component: {fileID: 1140320474}
   m_Layer: 10
   m_Name: pPlane1
   m_TagString: Untagged
@@ -19441,6 +19447,19 @@ Transform:
   m_Father: {fileID: 1820251829}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1140320474
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140320472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0, z: 0.009999998}
+  m_Center: {x: 3.4924597e-10, y: 0, z: -5.551115e-17}
 --- !u!23 &1140320475
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20289,6 +20308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1201354822
 GameObject:
   m_ObjectHideFlags: 0
@@ -20818,6 +20838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &1261125637
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20907,7 +20928,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
-  jumpForce: 500
+  jumpForce: 1011.1
   player:
     serializedVersion: 2
     m_Bits: 8
@@ -20927,6 +20948,7 @@ MonoBehaviour:
   scoreCounter: {fileID: 0}
   key: {fileID: 0}
   target: {fileID: 1070391912}
+  paintedObjects: []
   normalSpeed: 10
   sprintSpeed: 20
   convoStart: {fileID: 742214746}
@@ -23868,6 +23890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1480368357
 GameObject:
   m_ObjectHideFlags: 0
@@ -24766,6 +24789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1522439012
 GameObject:
   m_ObjectHideFlags: 0
@@ -24943,6 +24967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1552195265
 GameObject:
   m_ObjectHideFlags: 0
@@ -25465,7 +25490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595632355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.671, z: -0.073}
+  m_LocalPosition: {x: -0.01, y: -0.595, z: -0.073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1261125639}
@@ -27930,6 +27955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1774875146
 GameObject:
   m_ObjectHideFlags: 0
@@ -29497,6 +29523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1891627955
 GameObject:
   m_ObjectHideFlags: 0
@@ -30577,6 +30604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1950981637
 GameObject:
   m_ObjectHideFlags: 0
@@ -31319,6 +31347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1994903373
 GameObject:
   m_ObjectHideFlags: 0
@@ -31433,6 +31462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &2003613654
 GameObject:
   m_ObjectHideFlags: 0
@@ -34210,6 +34240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &193750180607015585
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34344,6 +34375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &223493712118164632
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35663,6 +35695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &660388379820052156
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -35746,6 +35779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &694398897598696183
 Transform:
   m_ObjectHideFlags: 0
@@ -35925,6 +35959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &780705025793522594
 GameObject:
   m_ObjectHideFlags: 0
@@ -36063,6 +36098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &836676497240344992
 GameObject:
   m_ObjectHideFlags: 0
@@ -36110,6 +36146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &858656847690424160
 GameObject:
   m_ObjectHideFlags: 0
@@ -36159,6 +36196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &874030431004388902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36385,6 +36423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &953264208692576585
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36681,6 +36720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &1073195230129358930
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36777,6 +36817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &1096807976712575423
 Transform:
   m_ObjectHideFlags: 0
@@ -37067,6 +37108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &1205855109075402878
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -37200,6 +37242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &1287326601288142154
 Transform:
   m_ObjectHideFlags: 0
@@ -37444,6 +37487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &1390973179143539253
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37911,6 +37955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &1564992031697570658
 Transform:
   m_ObjectHideFlags: 0
@@ -38047,6 +38092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &1617412217883596304
 Transform:
   m_ObjectHideFlags: 0
@@ -38185,6 +38231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!33 &1730783493535274933
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -38705,6 +38752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &1860574644844481824
 GameObject:
   m_ObjectHideFlags: 0
@@ -38967,6 +39015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &1924647191772190761
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39028,6 +39077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &1935162041891586236
 Transform:
   m_ObjectHideFlags: 0
@@ -39236,6 +39286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &2027769451442374418
 Transform:
   m_ObjectHideFlags: 0
@@ -39342,6 +39393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &2041843708855233087
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -39623,6 +39675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &2147001217975628748
 GameObject:
   m_ObjectHideFlags: 0
@@ -39718,6 +39771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &2173279550760183066
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39977,6 +40031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &2273571378281875846
 GameObject:
   m_ObjectHideFlags: 0
@@ -40231,6 +40286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &2374837840903154966
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40396,6 +40452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &2401024160325224236
 Transform:
   m_ObjectHideFlags: 0
@@ -40579,6 +40636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &2465488637356572819
 GameObject:
   m_ObjectHideFlags: 0
@@ -40612,6 +40670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &2465488637356572821
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41005,6 +41064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &2647526743767352050
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41065,6 +41125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &2658532556509677204
 GameObject:
   m_ObjectHideFlags: 0
@@ -41199,6 +41260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &2715550240260387703
 Transform:
   m_ObjectHideFlags: 0
@@ -41330,6 +41392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &2747084219626348983
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -41597,6 +41660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &2875347732323170863
 GameObject:
   m_ObjectHideFlags: 0
@@ -41837,6 +41901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &2934394232942569614
 Transform:
   m_ObjectHideFlags: 0
@@ -41980,6 +42045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!33 &3007170337844559571
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42185,6 +42251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &3066745188314237108
 GameObject:
   m_ObjectHideFlags: 0
@@ -42288,6 +42355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3111887572666810914
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42541,6 +42609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3151165258898611896
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42830,6 +42899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &3283734266849591365
 Transform:
   m_ObjectHideFlags: 0
@@ -43082,6 +43152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3335563294993628029
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43190,6 +43261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &3352277632567969468
 Transform:
   m_ObjectHideFlags: 0
@@ -43380,6 +43452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &3381942551620577177
 Transform:
   m_ObjectHideFlags: 0
@@ -43515,6 +43588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3414451763160047233
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43562,6 +43636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3416152658610650371
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43625,6 +43700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3425872881713833291
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43757,6 +43833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &3449001868773285316
 Transform:
   m_ObjectHideFlags: 0
@@ -44005,6 +44082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &3527484116284311084
 Transform:
   m_ObjectHideFlags: 0
@@ -44066,6 +44144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &3534991265797699240
 Transform:
   m_ObjectHideFlags: 0
@@ -44776,6 +44855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &3867085085519845178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44929,6 +45009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &3927107894892967931
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45066,6 +45147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &3962120572616662613
 GameObject:
   m_ObjectHideFlags: 0
@@ -45307,6 +45389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &4053952626137202661
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45461,6 +45544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!33 &4114105708739044996
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -45564,6 +45648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &4132755457550317113
 Transform:
   m_ObjectHideFlags: 0
@@ -46407,6 +46492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &4495442891870443090
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46927,6 +47013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &4719247584595306403
 GameObject:
   m_ObjectHideFlags: 0
@@ -46990,6 +47077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &4724691599285497221
 GameObject:
   m_ObjectHideFlags: 0
@@ -47023,6 +47111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &4724691599285497223
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47222,6 +47311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &4824324589000419355
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47460,6 +47550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &4975635595635961292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47539,6 +47630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5001374366798931029
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48054,6 +48146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &5187279041654716679
 Transform:
   m_ObjectHideFlags: 0
@@ -48244,6 +48337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &5255733823420024820
 GameObject:
   m_ObjectHideFlags: 0
@@ -48277,6 +48371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5255733823420024822
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48569,6 +48664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &5344085232664754809
 Transform:
   m_ObjectHideFlags: 0
@@ -48675,6 +48771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5372116137903658718
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48750,6 +48847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &5408415091705699283
 Transform:
   m_ObjectHideFlags: 0
@@ -48993,6 +49091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &5506029958060726644
 Transform:
   m_ObjectHideFlags: 0
@@ -49085,6 +49184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &5515663501818417752
 GameObject:
   m_ObjectHideFlags: 0
@@ -49239,6 +49339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5553224467094354579
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49300,6 +49401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5557050214216659297
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49474,6 +49576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5601633379772435359
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -49819,6 +49922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &5707406749258505215
 Transform:
   m_ObjectHideFlags: 0
@@ -49880,6 +49984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &5713982490180925828
 GameObject:
   m_ObjectHideFlags: 0
@@ -50144,6 +50249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &5803392964500039265
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50493,6 +50599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &5924791875027320085
 GameObject:
   m_ObjectHideFlags: 0
@@ -50735,6 +50842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &5978404583601729589
 Transform:
   m_ObjectHideFlags: 0
@@ -50958,6 +51066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &6078987519461247845
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51048,6 +51157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &6093074605058422077
 Transform:
   m_ObjectHideFlags: 0
@@ -51339,6 +51449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &6161165705109456057
 GameObject:
   m_ObjectHideFlags: 0
@@ -51386,6 +51497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &6164734096643357161
 GameObject:
   m_ObjectHideFlags: 0
@@ -51640,6 +51752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &6218284887259049730
 GameObject:
   m_ObjectHideFlags: 0
@@ -51778,6 +51891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &6285412092829380470
 Transform:
   m_ObjectHideFlags: 0
@@ -51854,6 +51968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &6321613925676240535
 GameObject:
   m_ObjectHideFlags: 0
@@ -51900,6 +52015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!33 &6323288425223232206
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -52242,6 +52358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &6523267707225759892
 GameObject:
   m_ObjectHideFlags: 0
@@ -52448,6 +52565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!33 &6589742944865654098
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -52707,6 +52825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &6775869029010099811
 Transform:
   m_ObjectHideFlags: 0
@@ -53165,6 +53284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &6948499112761742347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53255,6 +53375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &6964489735414030255
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53395,6 +53516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &6980515602836691427
 Transform:
   m_ObjectHideFlags: 0
@@ -53698,6 +53820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7125660134849423911
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54005,6 +54128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7262794971644286668
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54155,6 +54279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7371354395264103474
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54278,6 +54403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &7422176940003298657
 GameObject:
   m_ObjectHideFlags: 0
@@ -54356,6 +54482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7433775837167580984
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54721,6 +54848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7592246901948408789
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54800,6 +54928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7625596909799240080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -54998,6 +55127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7714634609565024407
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55105,6 +55235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!23 &7733969412211607570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -55560,6 +55691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7880565768794673966
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55720,6 +55852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &7936622341519918709
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -55812,6 +55945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &7999436435663456866
 Transform:
   m_ObjectHideFlags: 0
@@ -56183,6 +56317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &8118891878023137099
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56287,6 +56422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &8136347207327191486
 Transform:
   m_ObjectHideFlags: 0
@@ -56514,6 +56650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8243470370369241607
 GameObject:
   m_ObjectHideFlags: 0
@@ -56725,6 +56862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &8324314823449662591
 Transform:
   m_ObjectHideFlags: 0
@@ -56902,6 +57040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &8374942589121154466
 Transform:
   m_ObjectHideFlags: 0
@@ -56993,6 +57132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &8401784773102523885
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57070,6 +57210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!33 &8415313325556552284
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -57253,6 +57394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &8454076497046487771
 Transform:
   m_ObjectHideFlags: 0
@@ -57378,6 +57520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &8482579952320310309
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -57438,6 +57581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8487116929901131800
 GameObject:
   m_ObjectHideFlags: 0
@@ -57500,6 +57644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8500134773749654940
 GameObject:
   m_ObjectHideFlags: 0
@@ -57627,6 +57772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8551008705273812951
 GameObject:
   m_ObjectHideFlags: 0
@@ -57779,6 +57925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &8606358633824458898
 Transform:
   m_ObjectHideFlags: 0
@@ -58038,6 +58185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8733370502022960625
 GameObject:
   m_ObjectHideFlags: 0
@@ -58148,6 +58296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8773509296489206003
 GameObject:
   m_ObjectHideFlags: 0
@@ -58300,6 +58449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!4 &8810935047786791731
 Transform:
   m_ObjectHideFlags: 0
@@ -58385,6 +58535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &8850823650736745832
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58729,6 +58880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &8983752000984269857
 GameObject:
   m_ObjectHideFlags: 0
@@ -58880,6 +59032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!1 &9018938561608265088
 GameObject:
   m_ObjectHideFlags: 0
@@ -59031,6 +59184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &9117980864255529981
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -59266,6 +59420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paint: {fileID: 1085030809}
+  painted: 0
 --- !u!64 &9189976520802456281
 MeshCollider:
   m_ObjectHideFlags: 0
