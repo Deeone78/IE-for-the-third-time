@@ -10,8 +10,8 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     public AudioClip collect;
     public AudioSource sfxPlayer;
-    public static event Action OnCollected;    
-    
+    public static event Action OnCollected;
+
     GameObject cam;
     bool npcDistance = false;
     bool npcDistance1 = false;
@@ -21,10 +21,15 @@ public class CharacterController : MonoBehaviour
 
     Rigidbody myRigidbody;
     bool isOnGround = false;
+    bool isPortalin = false;
+    bool isPortalin1 = false;
     public GameObject groundChecker;
+    public GameObject areInPort;
     public LayerMask groundLayer;
-    public float jumpForce = 3000.0f; 
+    public float jumpForce = 3000.0f;
     public LayerMask player;
+    public LayerMask portal;
+    public LayerMask portal1;
     public LayerMask player1;
     public LayerMask player2;
     public LayerMask player3;
@@ -49,16 +54,16 @@ public class CharacterController : MonoBehaviour
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
         sprintTimer = maxSprint;
-
+        
     }
 
-                                           // Update is called once per frame
+    // Update is called once per frame
     float rotation = 0.0f;
     public float normalSpeed = 1f;
     public float sprintSpeed = 20f;
 
     float maxSpeed;
-
+    
     float camRoatation = 0.0f;
     float rotaiotionSpeed = 5.0f;
     float camRotationSpeed = 5.0f;
@@ -67,7 +72,7 @@ public class CharacterController : MonoBehaviour
     public GameObject convoStart2;
     public GameObject convoStart3;
     public GameObject convoStart4;
-    
+
 
     void Update()
     {
@@ -78,9 +83,10 @@ public class CharacterController : MonoBehaviour
         npcDistance2 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player2);
         npcDistance3 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player3);
         npcDistance4 = Physics.CheckSphere(groundChecker.transform.position, 10.1f, player4);
+        isPortalin = Physics.CheckSphere(groundChecker.transform.position, 1f, portal);
+        isPortalin1 = Physics.CheckSphere(groundChecker.transform.position, 1f, portal1);
+        // Debug.Log(CompleteCheck());
 
-        Debug.Log(CompleteCheck());
-        
         if (npcDistance == true)
         {
             convoStart.SetActive(true);
@@ -111,7 +117,7 @@ public class CharacterController : MonoBehaviour
         {
             convoStart2.SetActive(false);
         }
-        
+
         if (npcDistance3 == true)
         {
             convoStart3.SetActive(true);
@@ -137,7 +143,7 @@ public class CharacterController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-             //   npcDistance.gameObject.GetComponent<NPC>().TriggerDialogue();
+                //   npcDistance.gameObject.GetComponent<NPC>().TriggerDialogue();
             }
         }
 
@@ -158,14 +164,39 @@ public class CharacterController : MonoBehaviour
         {
             maxSpeed = sprintSpeed;
             sprintTimer = sprintTimer - Time.deltaTime;
-        } else
+        }
+        else
         {
             maxSpeed = normalSpeed;
-            if (Input.GetKey(KeyCode.LeftShift) == false) {
+            if (Input.GetKey(KeyCode.LeftShift) == false)
+            {
                 sprintTimer = sprintTimer + Time.deltaTime;
             }
 
         }
+        
+        
+        if (isPortalin == true)
+        {
+
+            Debug.Log("you did it");
+
+            SceneManager.LoadScene(3);
+        }
+
+
+        if(isPortalin1 == true)
+        {
+
+            Debug.Log("you did it");
+
+            SceneManager.LoadScene(2);
+        }
+
+
+
+
+
         sprintTimer = Mathf.Clamp(sprintTimer, 0.0f, maxSprint);
 
         Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
@@ -183,10 +214,10 @@ public class CharacterController : MonoBehaviour
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotaiotionSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
-        
+
         //Debug.Log(Input.GetAxis("Mouse Y"));
 
-        target.position= new Vector3(target.position.x, target.position.y + Input.GetAxis("Mouse Y"), target.position.z);
+        target.position = new Vector3(target.position.x, target.position.y + Input.GetAxis("Mouse Y"), target.position.z);
 
         Mathf.Clamp(rotation, -10, 10);
 
@@ -200,14 +231,27 @@ public class CharacterController : MonoBehaviour
 
     bool CompleteCheck()
     {
-        for(int i = 0; i < paintedObjects.Length; i++)
+        for (int i = 0; i < paintedObjects.Length; i++)
         {
-            if(paintedObjects[i].painted == false)
+            if (paintedObjects[i].painted == false)
             {
                 return false;
             }
         }
 
         return true;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "SceneChange")
+        {
+            SceneManager.LoadScene(1);
+
+            Debug.Log("hit");
+        
+        }
+
+
     }
 }

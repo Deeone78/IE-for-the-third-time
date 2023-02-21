@@ -7,6 +7,7 @@ TagManager:
   - particle
   - NPC
   - DisBuild
+  - Scene Change
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - player3
   - player4
   - groundLayer
-  - 
-  - 
+  - portal
+  - portal1
   - 
   - 
   - 
