@@ -234,7 +234,7 @@ RectTransform:
   m_GameObject: {fileID: 1055196287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -28}
-  m_LocalScale: {x: 3.8925, y: 3.8925, z: 3.8925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2121040116}
   m_Father: {fileID: 1098930301}
@@ -243,7 +243,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.0042419, y: -0.0028343}
-  m_SizeDelta: {x: 247.65, y: 139.24}
+  m_SizeDelta: {x: 594, y: 734.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055196290
 MonoBehaviour:
@@ -752,8 +752,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.9172, y: 0}
+  m_SizeDelta: {x: 497.1404, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121040117
 MonoBehaviour:
@@ -777,19 +777,23 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
+    m_MaxSize: 183
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " leave my empty soul searching\r for life at the bottom of this dissolving
-    world of darkness.\r"
+  m_Text: "To interact with People you need to click the E Button with your mouse
+    before you can press E on your keybord, Jump is space, shift to sprint, right
+    click is aim and left click is shoot. Movement is WASD or Arows, whichever one
+    you prefer :) \nIn this game you have to bring colour to the abysmal world and
+    learn more about why the aliens hate you by talking to people. Goodluck! The
+    police are hostile. "
 --- !u!222 &2121040118
 CanvasRenderer:
   m_ObjectHideFlags: 0
