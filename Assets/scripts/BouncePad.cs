@@ -16,7 +16,6 @@ public class BouncePad : MonoBehaviour
         
     
     }
-    private void OnCollisionEnter(Collision other) {
-        
-    }
+   
+    
 }

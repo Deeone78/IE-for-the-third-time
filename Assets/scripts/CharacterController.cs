@@ -244,12 +244,14 @@ public class CharacterController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "SceneChange")
+        if (other.tag == "Player")
         {
-            SceneManager.LoadScene(1);
+            // SceneManager.LoadScene(1);
 
-            Debug.Log("hit");
-        
+            //Debug.Log("hit");
+            myRigidbody.AddForce(transform.up * jumpForce*1.5f);
+            myAnim.SetTrigger("jumped");
+
         }
 
 

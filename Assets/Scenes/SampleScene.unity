@@ -221,6 +221,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1822289 stripped
@@ -236,7 +244,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822289}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -3310,6 +3318,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &220794334 stripped
@@ -3325,7 +3341,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220794334}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -3691,6 +3707,101 @@ Transform:
   m_Father: {fileID: 1381875090}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &250223622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 576.6996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 198.50226
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 576.6996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Name
+      value: bounce pad (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+--- !u!1 &250223623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+  m_PrefabInstance: {fileID: 250223622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &250223624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250223623}
+  m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
+  m_Center: {x: -4.656613e-10, y: 0, z: 0}
 --- !u!1 &257939774
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,7 +4150,7 @@ GameObject:
   - component: {fileID: 296501224}
   - component: {fileID: 296501226}
   - component: {fileID: 296501225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube185 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5426,6 +5537,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &393164637 stripped
@@ -5441,7 +5560,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393164637}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -8545,6 +8664,24 @@ Transform:
   m_Father: {fileID: 1262223624}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &610666499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+  m_PrefabInstance: {fileID: 1201088872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &610666500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610666499}
+  m_Material: {fileID: 13400000, guid: df5891f9ecbbb1f43ba88d35b984ef27, type: 2}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
+  m_Center: {x: -4.656613e-10, y: 0, z: 0}
 --- !u!1 &612460495
 GameObject:
   m_ObjectHideFlags: 0
@@ -11499,6 +11636,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &840345590 stripped
@@ -11514,7 +11659,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840345590}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -13591,6 +13736,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1000471751 stripped
@@ -13606,7 +13759,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000471751}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -13879,6 +14032,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1015405461 stripped
@@ -13894,7 +14055,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015405461}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -14479,6 +14640,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1058102755 stripped
@@ -14494,7 +14663,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058102755}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -15087,6 +15256,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1082543121 stripped
@@ -15102,7 +15279,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082543121}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -20357,6 +20534,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1120501309 stripped
@@ -20372,7 +20557,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120501309}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -20622,7 +20807,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140320472}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fcdece373a1538e44b8a9ab6f2aa52c1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -21256,6 +21441,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1185880339 stripped
@@ -21271,7 +21464,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185880339}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -21631,6 +21824,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1201354822
@@ -21946,6 +22147,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1226087615 stripped
@@ -21961,7 +22170,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226087615}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -22217,7 +22426,7 @@ GameObject:
   - component: {fileID: 1261125636}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24730,7 +24939,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3956586359222508361}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fcdece373a1538e44b8a9ab6f2aa52c1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -26128,6 +26337,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1499663785 stripped
@@ -26143,7 +26360,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499663785}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -31552,6 +31769,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: bounce pad (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2786410bf1c3a34ca12a4a0a553a310, type: 3}
 --- !u!1 &1891282709 stripped
@@ -31567,7 +31792,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891282709}
   m_Material: {fileID: 13400000, guid: 0bf358cbd6f739d43ad2a3101a374cb8, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.02, y: 0.019999998, z: 0.019999998}
@@ -32665,7 +32890,7 @@ GameObject:
   - component: {fileID: 1950981638}
   - component: {fileID: 1950981640}
   - component: {fileID: 1950981639}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube119 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36404,7 +36629,7 @@ GameObject:
   - component: {fileID: 5804426917266675873}
   - component: {fileID: 223493712118164631}
   - component: {fileID: 223493712118164632}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube185 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42047,7 +42272,7 @@ GameObject:
   - component: {fileID: 3293299435500780977}
   - component: {fileID: 2264030668618252887}
   - component: {fileID: 2264030668618252888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube109 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43917,7 +44142,7 @@ GameObject:
   - component: {fileID: 9076048777217458703}
   - component: {fileID: 2925873891164172933}
   - component: {fileID: 2925873891164172934}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube110 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49028,7 +49253,7 @@ GameObject:
   - component: {fileID: 2476971939891424089}
   - component: {fileID: 4713245193831627208}
   - component: {fileID: 4713245193831627209}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube177
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49340,7 +49565,7 @@ GameObject:
   - component: {fileID: 7850003751179583815}
   - component: {fileID: 4824324589000419354}
   - component: {fileID: 4824324589000419355}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube184 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50862,7 +51087,7 @@ GameObject:
   - component: {fileID: 149283564980545895}
   - component: {fileID: 5387339473053911211}
   - component: {fileID: 5387339473053911212}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube92
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51605,7 +51830,7 @@ GameObject:
   - component: {fileID: 1482024460840438798}
   - component: {fileID: 5601633379772435358}
   - component: {fileID: 5601633379772435359}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube127 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56308,7 +56533,7 @@ GameObject:
   - component: {fileID: 5677292643525704708}
   - component: {fileID: 7371354395264103473}
   - component: {fileID: 7371354395264103474}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube149 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56957,7 +57182,7 @@ GameObject:
   - component: {fileID: 7883351818442150917}
   - component: {fileID: 7625596909799240079}
   - component: {fileID: 7625596909799240080}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: pCube119 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
